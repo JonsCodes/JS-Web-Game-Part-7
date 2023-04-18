@@ -18,6 +18,14 @@ async function moveNPC(){
 
 moveNPC()
 
+async function loopyGreeny (){
+    let times = 0
+    while(times<5){
+        times++ 
+        await moveNPC()
+    }
+ }
+
 
 // Create the inventory
 const inventory = newInventory()
